@@ -4,51 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <title>Document</title>
 </head>
 <body>
   <!-- Header -->
-  <div></div>
+  <header class="document-header">
+    <span>logo nubi</span>
+    <span>camp</span>
+    <span>tuerca</span>
+  </header>
   <!-- Body -->
   <div>
-    <!-- seccion mi cuenta nubi -->
-    <div>
-      <h4>Mi cuenta Nubi</h4>
-      <ul>Agregar Dinero</ul>
-      <ul>Soulcitar dinero</ul>
-      <ul>Enviar Dinero</ul>
-      <ul>Carga Sube</ul>
-    </div>
-    <!-- seccion mi cuenta paypal -->
-    <div>
-      <h4>Mi cuenta paypal</h4>
-      <ul>Retiro</ul>
-      <ul>Recarga</ul>
-    </div>
-    <!-- seccion mis premios -->
-    <div>
-      <h4>Mis premios</h4>
-    </div>
-    <div>
-      <h4>Mi cuenta</h4>
-    </div>
+    <!-- barra separadora servicios nubi, servicios paypal, mis premios y mi cuenta. -->
+    <nav class="nav-bar">
+      <!-- seccion servicios nubi -->
+      <span class="nav-bar__title">Mi cuenta Nubi</span>
+      <ul class="nav-list">
+        <li class="nav-list__item">Agregar Dinero</li>
+        <li class="nav-list__item">Soulcitar dinero</li>
+        <li class="nav-list__item">Enviar Dinero</li>
+        <li class="nav-list__item">Carga Sube</li>
+      </ul>
+      <!-- seccion mi servicios paypal -->
+      <span class="nav-bar__title">Mi cuenta paypal</span>
+      <ul>
+        <li class="nav-list__item">Retiro</li>
+        <li class="nav-list__item">Recarga</li>
+      </ul>
+      <!-- seccion mis premios -->
+      <a class="nav-bar__title">Mis premios</a><br/>
+      <h4 class="nav-bar__title">Mi cuenta</h4>
+    </nav>
     <!-- Seccion Retiro Paypal -->
-    <div>
-      <h4>Retiro Paypal</h4>
+    <main class="selected-method">
+      <h1>Retiro Paypal</h1>
       <!-- Seccion Metodo de retiro -->
-      <div>
-        <h4>Metodo de retiro</h4>
-        <span>Elegí tu metodo preferido para hacer un retiro de tu cuenta PayPal</span>
-        <!-- sección cuentas bancarias -->
-        <div>
-          <span>cuentas bancarias:</span>
-        </div>
-        <!-- seccion proximamente -->
-        <div>
-          <span>Proximamente:</span>
-        </div>
-      </div>
-    </div>
+      <section class="method-options">
+          <header>
+            <h2>Metodo de retiro</h2>
+          </header>
+        <article>
+          <header>
+            <h3>Elegí tu metodo preferido para hacer un retiro de tu cuenta PayPal</h3>
+          </header>
+          <!-- sección cuentas bancarias -->
+          <ul>
+            <li><a>cuentas bancarias:</a></li>
+            <li><a><span>Proximamente:</span></a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
   </div>
 </body>
 </html>
